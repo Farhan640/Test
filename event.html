@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kris Community - Events</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: auto; /* Changed from 100% to auto */
+            font-family: Arial, sans-serif;
+            overflow: auto; /* Allow scrolling */
+        }
+        .video-background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;
+            z-index: -1;
+        }
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        /* Navigation Menu Styles */
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center; /* Center the navigation */
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex; /* Use flexbox for centering */
+            justify-content: center; /* Center items horizontally */
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            background-color: rgba(0, 0, 0, 0.7); /* Black transparent background */
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        .content h2 {
+            color: #00ffff;
+        }
+        .content p {
+            font-size: 1.1em;
+            line-height: 1.6em;
+        }
+        .cta {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .cta a {
+            background-color: #008080;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 10px;
+            display: inline-block;
+        }
+        .cta a:hover {
+            background-color: #006666;
+        }
+        .social-links {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 10px;
+        }
+        .social-links a img {
+            width: 75px; /* Increased width */
+            height: 75px; /* Increased height */
+            transition: transform 0.3s;
+        }
+        .social-links a img:hover {
+            transform: scale(1.1); /* Slight zoom effect on hover */
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 30px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Video Background -->
+<iframe class="video-background" src="video.html"></iframe>
+
+<div class="container">
+    <div class="header">
+        <h1>Upcoming Events</h1>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="event.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="content" id="events">
+        <h2>Join Us for Exciting Events!</h2>
+        <p>We host regular gatherings, competitions, and special themed events. Stay tuned for updates!</p>
+        <h3>Event Schedule:</h3>
+        <ul>
+            <li>-</li>
+            <li>-</li>
+            <li>-</li>
+        </ul>
+
+        <!-- Registration Button -->
+        <div class="cta">
+            <a href="registration.html" target="_blank">Kris Registration Form</a>
+        </div>
+    </div>
+
+    <div class="social-links">
+        <a href="https://www.youtube.com/channel/UCycl5GO_qvFK8BgXOiKxZRA" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube">
+        </a>
+        <a href="https://www.tiktok.com/@kisamer_" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" alt="TikTok">
+        </a>
+    </div>
+
+    <footer>
+        &copy; 2024 Kris Community | Malaysia's Minecraft Roleplay Hub
+    </footer>
+</div>
+
+</body>
+</html>
