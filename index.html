@@ -359,7 +359,9 @@
                 }
                 sliderTrack.style.transform = `translateX(${currentTranslate}px)`;
             }, 3000); // Change image every 3 seconds
-        }
+    if (window.location.pathname === "/index.html") {
+        window.location.href = "/";
+    }
     </script>
 </body>
 </html>
