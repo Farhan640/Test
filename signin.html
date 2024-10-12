@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Log Masuk - Kris Community</title>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Kris Community Logo" class="logo">
+    </header>
+    <main>
+        <h1>Log Masuk</h1>
+        <form id="signInForm">
+            <label for="minecraftNameInput">Nama Minecraft:</label>
+            <input type="text" id="minecraftNameInput" required>
+            <button type="submit">Log Masuk</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Kris Community. Semua hak cipta terpelihara.</p>
+    </footer>
+    <script>
+        document.getElementById('signInForm').onsubmit = function(event) {
+            event.preventDefault();
+            const minecraftName = document.getElementById('minecraftNameInput').value.trim();
+            sessionStorage.setItem('minecraftName', minecraftName); // Simpan nama pengguna ke sessionStorage
+            window.location.href = 'profile.html'; // Arahkan ke halaman profil
+        }
+    </script>
+</body>
+</html>
